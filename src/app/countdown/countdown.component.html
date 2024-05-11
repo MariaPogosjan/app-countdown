@@ -1,0 +1,11 @@
+<div>
+    <h1 *ngIf="titleInput">Time to {{ titleInput }}</h1>
+    <p>
+        <span *ngIf="days">{{ days }} days, </span>
+        <span *ngIf="hours">{{ hours }}h, </span>
+        <span *ngIf="minutes">{{ minutes }}m, </span>
+        <span *ngIf="seconds">{{ seconds }}s </span>
+    </p>
+</div>
+
+

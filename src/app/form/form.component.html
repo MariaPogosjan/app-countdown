@@ -1,0 +1,26 @@
+<form>
+    <div>
+        <label for="name">Title: </label>
+        <input 
+            #box 
+            (keyup.enter)="onEnter(box.value)" 
+            (blur)="onEnter(box.value)"
+            id="name"
+            type="text"
+            name="titleInput" 
+            required
+        />
+    </div>
+    <div>
+        <label for="date-input">Date :</label>
+        <input 
+            id="date-input" 
+            type="date" 
+            [min]="minDate"
+            [(ngModel)]="dateInput" 
+            (ngModelChange)="onDateChange($event)"
+            name="dateInput" 
+            required
+        />
+    </div>
+</form>

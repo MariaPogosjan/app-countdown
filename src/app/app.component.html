@@ -1,6 +1,6 @@
 
 <main class="main">
-  <h1>Hello! 👋</h1>
+  <app-form (titleInput)="onTitleInputChange($event)" (dateInputChange)="onDateChange($event)"></app-form>
+  <app-countdown [titleInput]="titleInput" [dateInput]="dateInput"></app-countdown>
 </main>
-
 <router-outlet />
