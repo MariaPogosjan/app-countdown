@@ -1,13 +1,30 @@
-h1 {
-    font-size: 67px;
+.countdown-container {
+    margin-bottom: 135px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 35px;
+    }
+}
+
+.title {
+    font-size: 28px;
     font-weight: 800;
     color: #72035D;
     margin: 0;
+
+    @media (min-width: 768px) {
+        font-size: 67px;
+    }
+
 }
 
-p {
-    font-size: 74px;
+.time {
+    font-size: 32px;
     font-weight: 400;
     color: #000000;
-    margin: 0;
+    margin: 15px 0 0 0;
+
+    @media (min-width: 768px) {
+        font-size: 74px;
+    }
 }

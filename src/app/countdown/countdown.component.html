@@ -1,6 +1,6 @@
-<div>
-    <h1 *ngIf="titleInput">Time to {{ titleInput }}</h1>
-    <p>
+<div class="countdown-container">
+    <h1 class="title" *ngIf="titleInput">Time to {{ titleInput }}</h1>
+    <p class="time">
         <span *ngIf="days">{{ days }} days, </span>
         <span *ngIf="hours">{{ hours }}h, </span>
         <span *ngIf="minutes">{{ minutes }}m, </span>

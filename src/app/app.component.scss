@@ -1,13 +1,16 @@
-
-main {
+.main {
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
   position: relative;
   background: #F5F3F3;
   font-family: 'Open Sans', sans-serif;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  padding-inline: 24px;
+}

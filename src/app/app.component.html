@@ -1,6 +1,8 @@
 
 <main class="main">
-  <app-form (titleInput)="onTitleInputChange($event)" (dateInputChange)="onDateChange($event)"></app-form>
-  <app-countdown [titleInput]="titleInput" [dateInput]="dateInput"></app-countdown>
+  <div class="wrapper">
+    <app-form (titleInput)="onTitleInputChange($event)" (dateInputChange)="onDateChange($event)"></app-form>
+    <app-countdown [titleInput]="titleInput" [dateInput]="dateInput"></app-countdown>
+  </div>
 </main>
 <router-outlet />

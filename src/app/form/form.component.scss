@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 15px;
+
+    }
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-label {
+    position: absolute;
+    top: 0.2em;
+    z-index: 1;
+    left: 1.4em;
+    background-color: #F5F3F3;
+    padding-inline: 0.4em;
+    font-size: 14px;
+}
+
+.input-field {
+    background-color: transparent;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    position: relative;
+    width: 278px;
+    height: 54px;
+    margin: 10px;
+    padding: 0 10px;
+} 
