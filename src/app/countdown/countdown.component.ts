@@ -1,14 +1,16 @@
 import { Component, Input } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
 import { NgIf } from '@angular/common';
+import { FluidFontSizeDirective } from '../fluidFontSize/fluid-font-size.directive';
 
 @Component({
   selector: 'app-countdown',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, FluidFontSizeDirective],
   templateUrl: './countdown.component.html',
-  styleUrl: './countdown.component.scss'
+  styleUrl: './countdown.component.scss', 
 })
+
 export class CountdownComponent {
   @Input() titleInput: string = '';
   @Input() dateInput: string = '';
